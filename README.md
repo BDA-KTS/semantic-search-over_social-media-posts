@@ -1,5 +1,4 @@
-# Method Title
-Looking up the most Similar Tweets to a text
+# Looking up the most Similar Tweets to a text
 
 ## Description
 This method guides users through finding tweets that are similar to a specific text or tweet. It explains techniques for measuring text similarity and demonstrates their implementation in Python.
