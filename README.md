@@ -36,9 +36,11 @@ Digital Behavioral Data (DBD) Dataset, such as social media posts like Tweeter(h
 ## Sample Input and Output Data
 ### Input:
 Here is a keyword to search in all tweets:
+
 'social media'
 ### Output:
 Here are two most similar tweets to the given tweet:
+
 '
 Top similar tweets:
 Tweet: It's extremely comforting to know that the power of mainstream media has been diluted by social media? #SNP (Similarity: 0.8713537764005534)
