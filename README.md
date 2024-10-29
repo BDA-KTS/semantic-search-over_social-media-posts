@@ -1,33 +1,26 @@
 # Looking up the most Similar Tweets to a text
 
 ## Description
-This method guides users through finding tweets that are similar to a specific text or tweet. It explains techniques for measuring text similarity and demonstrates their implementation in Python.
+The method implements semantic search over a collection of social media posts e.g., tweets, and returns the most similar posts to the search query. It uses a pretrained language model (embeddings) to determine the posts closest to the query text using cosine similarity and returns the ranked results.  
 
 ## Keywords
 Text similarity, Tweet analysis, Locality Sensitive Hashing (LSH), Python
 
 ## Science Usecase(s)
-- **Social Media Analysis**: Analyzing social media data for sentiment trends and user behavior.
-- **Content Analysis**: Examining textual data for themes and linguistic patterns.
-- **Cultural Studies**: Comparing cultural artifacts such as literature or music.
-- **Political Science**: Understanding political discourse and public opinion.
-- **Psychological Research**: Analyzing textual data from online forums or therapy sessions.
-
+- finding posts on specific keywords.
 
 ## Repo Structure
 The repository is organized as follows:
 - **Folders**:
   - `__pycache__`: Contains cached Python bytecode files.
   - `data`: Stores data used by the method.
-  - `images`: Holds images used in the method or tutorial.
   - `tmp2`: Contains additional files and data, including stopwords and the `twitter_samples` dataset.
 
 - **Files**:
   - `Looking up the tweets.ipynb`: The main code implemented as a Jupyter Notebook. It contains four sections covering document embeddings, tweet lookup, similarity computation, and hash table creation..
   - `readme.md`: Guideline document providing instructions for using the method.
   - `utils.py`: Contains essential functions needed for the method's functionality.
-  - `w4_unitest.py`: Unit test file to verify correct execution of the code.
-
+  
 
 ## Environment Setup
 Requires Python and the NLTK library. Install NLTK using:
@@ -37,21 +30,20 @@ pip install nltk
 ```
 
 
-## Hardware Requirements (Optional)
-No specific hardware requirements.
-
 ## Input Data
 Digital Behavioral Data (DBD) Dataset, such as social media posts like Tweeter(https://data.gesis.org/tweetskb/)
 
 ## Sample Input and Output Data
 ### Input:
-Here is a tweet to search in all tweets:
-'#FollowFriday @France_Inte @PKuchly57 @Milipol_Paris for being top engaged members in my community this week :)'
+Here is a keyword to search in all tweets:
+'social media'
 ### Output:
 Here are two most similar tweets to the given tweet:
 '
-document contents: #ShareTheLove @oymgroup @musicartisthere for being top HighValue members this week :) @nataliavas http://t.co/IWSDMtcayt
-document contents: #FollowFriday @straz_das @DCarsonCPA @GH813600 for being top engaged members in my community this week :)
+Top similar tweets:
+Tweet: It's extremely comforting to know that the power of mainstream media has been diluted by social media? #SNP (Similarity: 0.8713537764005534)
+Tweet: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
+Tweet: RT @mariachantre: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
 '
 
 
