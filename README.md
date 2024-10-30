@@ -4,10 +4,10 @@
 The method implements semantic search over a collection of social media posts e.g., tweets, and returns the most similar posts to the search query. It uses a pretrained language model (embeddings) to determine the posts closest to the query text using cosine similarity and returns the ranked results.  
 
 ## Keywords
-Text similarity, Tweet analysis, Locality Sensitive Hashing (LSH), Python
+Text similarity, Semantic similarity search, text retrieval 
 
 ## Science Usecase(s)
-- finding posts on specific keywords.
+- To a social media post in query, find the most relevant posts i.e., with highest semantic similarity in a dump of posts.   
 
 ## Repo Structure
 The repository is organized as follows:
@@ -31,7 +31,7 @@ pip install nltk
 
 
 ## Input Data
-Digital Behavioral Data (DBD) Dataset, such as social media posts like Tweeter(https://data.gesis.org/tweetskb/)
+Social media posts e.g., tweets in (https://data.gesis.org/tweetskb/)  
 
 ## Sample Input and Output Data
 ### Input:
