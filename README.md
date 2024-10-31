@@ -47,6 +47,7 @@ Tweet: It's extremely comforting to know that the power of mainstream media has 
 Tweet: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
 Tweet: RT @mariachantre: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
 '
+![image](https://github.com/user-attachments/assets/f2576dd0-f10c-4e2a-9550-36358ceb6c54)
 
 
 ## How to UseTo utilize this tutorial effectively, follow these steps:
