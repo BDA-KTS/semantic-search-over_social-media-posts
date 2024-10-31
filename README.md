@@ -36,17 +36,11 @@ Social media posts e.g., tweets in (https://data.gesis.org/tweetskb/)
 ## Sample Input and Output Data
 ### Input:
 Here is a keyword to search in all tweets:
+![image](https://github.com/user-attachments/assets/20f30a39-6522-406f-b3d2-a9eb3fe9e040)
 
-'social media'
 ### Output:
-Here are two most similar tweets to the given tweet:
+Here are three most similar tweets to the given tweet:
 
-'
-Top similar tweets:
-Tweet: It's extremely comforting to know that the power of mainstream media has been diluted by social media? #SNP (Similarity: 0.8713537764005534)
-Tweet: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
-Tweet: RT @mariachantre: @lauraewaddell @ScotlandTonight @bbcqt that party of social democracy gave us the Tories in 1979 (Similarity: 0.8146305082114431)
-'
 ![image](https://github.com/user-attachments/assets/f2576dd0-f10c-4e2a-9550-36358ceb6c54)
 
 
