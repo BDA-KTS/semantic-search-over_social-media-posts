@@ -44,7 +44,8 @@ Here are three most similar tweets to the given tweet:
 ![image](https://github.com/user-attachments/assets/f2576dd0-f10c-4e2a-9550-36358ceb6c54)
 
 
-## How to UseTo utilize this tutorial effectively, follow these steps:
+## How to Use
+To utilize this tutorial effectively, follow these steps:
 
 1. **Install Python and Necessary Packages**:
    - Ensure that Python is installed on your system. You can download and install Python from the official website (https://www.python.org/).
