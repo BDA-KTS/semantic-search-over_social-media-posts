@@ -1,7 +1,7 @@
 # Semantic search over social media posts (tweets)
 
 ## Description
-The method implements semantic search over a collection of social media posts e.g., tweets, and returns the most similar posts to the search query. It uses a pretrained language model (embeddings) to determine the posts closest to the query text using cosine similarity and returns the ranked results.  
+The method implements semantic search over a collection of social media posts e.g., tweets, and returns the most similar posts to the search query. It uses a pretrained language model (embeddings) to determine the posts closest to the query text using cosine similarity and returns the most relevant posts to the search query.  
 
 ## Keywords
 Text similarity, Semantic similarity search, text retrieval 
