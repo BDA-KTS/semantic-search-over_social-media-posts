@@ -30,7 +30,7 @@ pip install nltk
 ```
 
 
-## Input Data
+## Applicable Datasets and Formats
 Social media posts e.g., tweets in (https://data.gesis.org/tweetskb/)  
 
 ## Sample Input and Output Data
