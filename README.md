@@ -41,7 +41,7 @@ Here is a keyword to search in all tweets:
 ### Output:
 Here are three most similar tweets to the given tweet:
 
-![image](https://github.com/user-attachments/assets/f2576dd0-f10c-4e2a-9550-36358ceb6c54)
+![image](https://github.com/user-attachments/assets/79c608f4-ab49-4215-b5fe-b68205e424aa)
 
 
 ## How to Use
