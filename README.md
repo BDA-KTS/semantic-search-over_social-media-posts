@@ -40,8 +40,8 @@ The method is applicable to query social media posts in json format e.g., tweets
 ```mermaid
 graph LR
 A[Load TweetsKB RDF] -->B(Read Tweet IDs)
-    B --> C(hyderate tweet text)
-    C --> D[load posts in JSON]
+    B --> C(Hyderate tweet text)
+    C --> D[Load posts in JSON]
 ```
 
 ## Method Reusability Demonstration
