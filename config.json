@@ -3,5 +3,5 @@
 	"top-k": 5,
 	"input_query_filepath": "/data/input_queries.txt",
 	"output_filepath": "/data/output.json",
-	"posts_filepath": "/socialmedia_posts/corpora/twitter_samples/tweets.20150430-223406.json"
+	"posts_filepath": "/corpora/tweets.20150430-223406.json"
 }
