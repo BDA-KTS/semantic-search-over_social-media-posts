@@ -30,8 +30,12 @@ pip install nltk
 ```
 
 
-## Applicable Datasets and Formats
-Social media posts e.g., tweets in (https://data.gesis.org/tweetskb/)  
+## Applicable Datasets
+The method is designed to work with textual datasets from various sources. Examples include social media platforms, such as:
+
+Tweets Dataset: Collections of Twitter posts in formats like JSON or CSV, containing text.
+Telegram Messages Dataset: Text data extracted from public or private Telegram channels and groups, typically available in JSON format or other exportable structures.
+These datasets must contain structured text fields to facilitate processing and analysis by the method.
 
 ## Sample Input and Output Data
 ### Input:
@@ -45,7 +49,7 @@ Here are three most similar tweets to the given tweet:
 
 
 ## How to Use
-To utilize this tutorial effectively, follow these steps:
+Follow these steps to install Jupyter Notebook, download the tutorial materials, navigate to the directory, open the notebook, and execute the provided code in the Jupyter Notebook environment:
 
 1. **Install Python and Necessary Packages**:
    - Ensure that Python is installed on your system. You can download and install Python from the official website (https://www.python.org/).
@@ -75,9 +79,6 @@ To utilize this tutorial effectively, follow these steps:
 
 6. **Run the Codes**:
    - Run each code cell in the notebook sequentially by selecting the cell and pressing Shift + Enter or using the "Run" button in the Jupyter Notebook interface.
-
-Follow these steps to install Jupyter Notebook, download the tutorial materials, navigate to the directory, open the notebook, and execute the provided code in the Jupyter Notebook environment.
-
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via Email: "fakhri.momeni@gesis.org".
