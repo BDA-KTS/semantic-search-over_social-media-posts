@@ -50,7 +50,7 @@ A[Load TweetsKB RDF] -->B(Read Tweet IDs)
 ### 1. How to Use
 - **Setting up virtual environment**
     - Create isolated virtual environment to execute the method
-    - Using Conda `conda create -n <venv-name> python==3.8` *or*
+    - Using Conda `conda create -n <venv-name> python=3.8` *or*
     - Using python `python -m venv <venv-name>`
     - Install all required packages freezed into the requirements.txt file using command `pip install -r requirements.txt` 
 - **Executing method**
