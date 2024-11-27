@@ -7,7 +7,7 @@ The method reads search queries from `data/input_queries.txt` having each query 
 The users can easily customize the behavior of the method by providing their preferences and paths to resources in the `config.json`. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. Furthermore, working environment of the method is preserved in `requirements.txt` file, `random seed variables` are defined and the necessary details to reuse the method are provided in this document.
 
 ## Prerequisite
-This lookup method requires social media posts collection in `JSON` format to be placed in the `socialmedia_posts/` folder and its path updated in the `config.json` file. For the sake of demo, it operates on the NLTK sample tweets placed in `socialmedia_posts/corpora/twitter_samples/tweets.20150430-223406.json`.
+This lookup method requires social media posts collection in `JSON` format to be placed in the `socialmedia_posts/` folder and its path updated in the `config.json` file. For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/tweets.20150430-223406.json`.
 
 ## Keywords
 *Text similarity, Semantic similarity search, text retrieval* 
