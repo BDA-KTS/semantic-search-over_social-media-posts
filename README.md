@@ -61,11 +61,10 @@ Follow these steps to install Jupyter Notebook, download the tutorial materials,
    - Once you are in the directory, start Jupyter Notebook.
    This will open Jupyter Notebook in your default web browser.
 
-5. **Open the Notebook**:
-   - In the Jupyter Notebook interface, navigate to the "Looking up the Tweets.ipynb" file and click on it to open the notebook.
 
-6. **Run the Codes**:
-   - Run each code cell in the notebook sequentially by selecting the cell and pressing Shift + Enter or using the "Run" button in the Jupyter Notebook interface.
+5. **Run the Codes**:
+   - In the Jupyter Notebook interface, navigate to the "Looking up the Tweets.ipynb" file and click on it to open the notebook.
+     Run each code cell in the notebook sequentially by selecting the cell and pressing Shift + Enter or using the "Run" button in the Jupyter Notebook interface.
 
 
 ## Sample Input and Output Data
