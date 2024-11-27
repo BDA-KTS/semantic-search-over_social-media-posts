@@ -20,7 +20,7 @@ The repository is organized as follows:
 - **Folders**:
   - `data`: Contains the input file `input_queries.txt`. The output file `output.json` is also created here
   - `embeddings`: Contains the English embeddings file from Fasttext `en_embeddings.p`
-  - `socialmedia_posts` Contains the collection of social media posts in `JSON` format
+  - `corpora` Contains the collection of social media posts in `JSON` format
 
 - **Code files**:
   - `lookup_socialmedia_posts.ipynb`: The main code implemented as a Jupyter Notebook. It contains four sections covering document embeddings, tweet lookup, similarity computation, and hash table creation..
