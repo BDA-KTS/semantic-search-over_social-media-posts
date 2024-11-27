@@ -37,26 +37,16 @@ Tweets Dataset: Collections of Twitter posts in formats like JSON or CSV, contai
 Telegram Messages Dataset: Text data extracted from public or private Telegram channels and groups, typically available in JSON format or other exportable structures.
 These datasets must contain structured text fields to facilitate processing and analysis by the method.
 
-## Sample Input and Output Data
-### Input:
-Here is a keyword to search in all tweets:
-![image](https://github.com/user-attachments/assets/20f30a39-6522-406f-b3d2-a9eb3fe9e040)
-
-### Output:
-Here are three most similar tweets to the given tweet:
-
-![image](https://github.com/user-attachments/assets/79c608f4-ab49-4215-b5fe-b68205e424aa)
-
-
 ## How to Use
 Follow these steps to install Jupyter Notebook, download the tutorial materials, navigate to the directory, open the notebook, and execute the provided code in the Jupyter Notebook environment:
 
 1. **Install Python and Necessary Packages**:
    - Ensure that Python is installed on your system. You can download and install Python from the official website (https://www.python.org/).
-   - Install Jupyter Notebook, which is a web-based interactive computing environment that allows you to create and share documents containing live code, equations, visualizations, and narrative text. Install it using pip:
+   - Install the necessary packages:
      ```
-     pip install notebook
+     pip install -r requirements.txt 
      ```
+     
 
 2. **Download the Folder**:
    - Download the provided folder containing the tutorial materials to your local machine. Ensure that you have extracted the contents of the folder if it is in a compressed format (e.g., .zip).
@@ -68,10 +58,7 @@ Follow these steps to install Jupyter Notebook, download the tutorial materials,
      ```
 
 4. **Launch Jupyter Notebook**:
-   - Once you are in the directory containing the tutorial materials, start Jupyter Notebook by entering the following command in the command prompt or terminal:
-     ```
-     jupyter notebook
-     ```
+   - Once you are in the directory, start Jupyter Notebook.
    This will open Jupyter Notebook in your default web browser.
 
 5. **Open the Notebook**:
@@ -79,6 +66,20 @@ Follow these steps to install Jupyter Notebook, download the tutorial materials,
 
 6. **Run the Codes**:
    - Run each code cell in the notebook sequentially by selecting the cell and pressing Shift + Enter or using the "Run" button in the Jupyter Notebook interface.
+
+
+## Sample Input and Output Data
+### Input:
+Here is a keyword to search in all tweets:
+![image](https://github.com/user-attachments/assets/20f30a39-6522-406f-b3d2-a9eb3fe9e040)
+
+### Output:
+Here are three most similar tweets to the given tweet:
+
+![image](https://github.com/user-attachments/assets/79c608f4-ab49-4215-b5fe-b68205e424aa)
+
+
+
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via Email: "fakhri.momeni@gesis.org".
