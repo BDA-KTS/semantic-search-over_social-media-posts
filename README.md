@@ -6,7 +6,7 @@ The method implements semantic search over a collection of social media posts e.
 The method reads search queries from `data/input_queries.txt` having each query per line as input and writes output in `data/output.json` file having top-K posts. The method loads [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) from `embeddings/en_embeddings.p` file and computes doc-embeddings as the average of its token embeddings.
 The users can easily customize the behavior of the method by providing their preferences and paths to resources in the `config.json`. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. Furthermore, working environment of the method is preserved in `requirements.txt` file, `random seed variables` are defined and the necessary details to reuse the method are provided in this document. 
 
-The method takes 2-4mins for 5000 posts on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz   2.80 GHz (with 16GB RAM). 
+*The method takes 2-4mins for 5000 posts on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz   2.80 GHz (with 16GB RAM).* 
 
 ## Prerequisite
 The pre-requisites for this method are `Python v3.8.*` or ideally Anaconda (to create virtual environments with required python version) installed on the system. Following the `How To Use` section will lead to installing other required packages.
