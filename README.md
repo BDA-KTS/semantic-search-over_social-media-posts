@@ -35,14 +35,13 @@ The repository is organized as follows:
 
   
 ## Applicability to DBD Datasets
-The method is applicable to query social media posts in json format e.g., tweets from [tweetsKB](https://data.gesis.org/tweetskb/). However, it requires the following steps before applying this method
+The method is applicable to query social media posts in json format e.g., tweets from [tweetsKB](https://data.gesis.org/tweetskb/). However, it requires the following additional steps before applying this method
 
 ```mermaid
 graph LR
 A[Load TweetsKB RDF] -->B(Read Tweet IDs)
-    B --> C{if-hyderated}
+    B --> C(hyderate tweet text)
     C --> D[load posts in JSON]
-    C --> E[discard post]
 ```
 
 ## Method Reusability Demonstration
