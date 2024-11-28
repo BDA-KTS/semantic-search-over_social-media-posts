@@ -92,6 +92,26 @@ The repository is organized as follows:
   -  `postBuild` file supports competibility with the execution environment to interactively execute and/or modify the method
   -  `CITATION.cff` file provides information on how this resource can be cited
 
+methods_hub/
+│
+├── data/
+│   ├── input_queries.txt
+│   ├── output.json
+│
+├── embeddings/
+│   ├── en_embeddings.p
+│
+├── corpora/
+│   ├── tweets.20150430-223406.json
+│
+├── utils.py
+├── lookup_socialmedia_posts.ipynb
+├── config.json
+├── requirements.txt
+├── LICENSE.txt
+├── CITATION.cff
+└── postBuild
+
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via Email: fakhri.momeni@gesis.org.
