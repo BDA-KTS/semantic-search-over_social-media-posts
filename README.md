@@ -29,11 +29,7 @@ The method is applicable to query social media posts in json format e.g., tweets
     - Install all required packages freezed into the requirements.txt file using command `pip install -r requirements.txt` 
 - **Executing method**
     - Set your desired configurations and file paths in the `config.json` file
-    - Launch Jupyter Lab to run the notebook (lookup_socialmedia_posts.ipynb) with the following command
-      ```
-      jupyter lab
-      ```
-    - Open jupyter lab to execute the method notebook i.e., `lookup_socialmedia_posts.ipynb` with command `jupyter lab`
+    - Launch Jupyter Lab to run the notebook (lookup_socialmedia_posts.ipynb) with the following command `jupyter lab`
     - Execute the notebook cells (some internal utility functions are called from `utils.py`)
 
 
@@ -45,7 +41,8 @@ You can enter the queries you want to search within the posts, with one query pe
 
 
 ### 3. Sample output:
-After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
+After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Each result in the output is a JSON object that includes the post ID, post text, and the similarity score (ranging from 0 to 1). The higher the similarity score, the more relevant the post is to the query.
+Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
 
 ```ruby
 {
