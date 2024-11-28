@@ -92,6 +92,7 @@ The repository is organized as follows:
   -  `postBuild` file supports competibility with the execution environment to interactively execute and/or modify the method
   -  `CITATION.cff` file provides information on how this resource can be cited
 
+```
 methods_hub/
 │
 ├── data/
@@ -111,7 +112,7 @@ methods_hub/
 ├── LICENSE.txt
 ├── CITATION.cff
 └── postBuild
-
+```
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via Email: fakhri.momeni@gesis.org.
