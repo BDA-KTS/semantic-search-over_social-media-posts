@@ -28,7 +28,11 @@ The method is applicable to query social media posts in json format e.g., tweets
     - Using python `python -m venv <venv-name>`
     - Install all required packages freezed into the requirements.txt file using command `pip install -r requirements.txt` 
 - **Executing method**
-    - Provide specific configurations and file paths in the `config.json` file
+    - Set your desired configurations and file paths in the `config.json` file
+    - Launch Jupyter Lab to run the notebook (lookup_socialmedia_posts.ipynb) with the following command
+      ```
+      jupyter lab
+      ```
     - Open jupyter lab to execute the method notebook i.e., `lookup_socialmedia_posts.ipynb` with command `jupyter lab`
     - Execute the notebook cells (some internal utility functions are called from `utils.py`)
 
