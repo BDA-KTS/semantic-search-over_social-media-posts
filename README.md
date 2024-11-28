@@ -20,7 +20,7 @@ This method requires social media posts collection in `JSON` format to be placed
 ## Applicability to DBD Datasets
 The method is applicable to query social media posts in json format e.g., tweets. 
 
-## 1. How to Use (For the use case example)
+## 1. How to Use with Sample Input and Output)
 - **Setting up virtual environment**
     - Create isolated virtual environment to execute the method
     - Using Conda `conda create -n <venv-name> python=3.8` *or*
