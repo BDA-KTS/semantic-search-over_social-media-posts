@@ -25,14 +25,22 @@ The method is applicable to query social media posts in json format e.g., tweets
 
 ## 1. How to Use with Sample Input and Output)
 - **Setting up virtual environment**
-    - Create isolated virtual environment to execute the method
-    - Using Conda `conda create -n <venv-name> python=3.8` *or*
-    - Using python `python -m venv <venv-name>`
-    - Install all required packages freezed into the requirements.txt file using command `pip install -r requirements.txt` 
-- **Executing method**
-    - Set your desired configurations and file paths in the `config.json` file
-    - Launch Jupyter Lab to run the notebook (lookup_socialmedia_posts.ipynb) with the following command `jupyter lab`
-    - Execute the notebook cells (some internal utility functions are called from `utils.py`)
+    - with Anaconda prompt
+      -  `conda create -n semantic_search python=3.8`
+      -  `conda activate semantic_search`
+      -  `pip install -r requirements.txt` 
+    - with python v3.8
+      - `python -m venv semantic_search`
+      - `cd semantic_search`
+      - `Scripts\activate`
+      - `cd ..`
+   - `jupyter lab` 
+   - *execute all notebook cells* 
+- **Replicability**
+   - set path to your social media posts in JSON format through `input_query_filepath`` in `/config.json`
+   - Update `/data/input_queries.txt` with new input queries, one per line
+   - Toggle `"ifpreprocess": true/false` in `/config.json` to compare results with/without special characters
+   - Change the value of `"top-k": 5` for desired number of top similar posts for each query 
 
 
 ### 2. Sample input (Search queries):
