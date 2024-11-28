@@ -15,39 +15,12 @@ This method requires social media posts collection in `JSON` format to be placed
 *Text similarity, Semantic similarity search, text retrieval* 
 
 ## Science Usecase(s)
-To a social media post in query, find the most relevant posts i.e., with highest semantic similarity in a collection of posts.   
+- A social scientist interested in finding relevant tweets about `social media`, `women` and `election`
 
-## Repo Structure
-The repository is organized as follows:
-- **Folders**:
-  - `data`: Contains the input file `input_queries.txt`. The output file `output.json` is also created here
-  - `embeddings`: Contains the English embeddings file from Fasttext `en_embeddings.p`
-  - `corpora` Contains the collection of social media posts in `JSON` format
-
-- **Code files**:
-  - `lookup_socialmedia_posts.ipynb`: The main code implemented as a Jupyter Notebook. It contains four sections covering document embeddings, tweet lookup, similarity computation, and hash table creation..
-  - `utils.py`: Contains essential functions needed for the method's functionality.
-    
-- **Open science/Reproducibility files**
-  - `LICENSE.txt` Apache 2.0 license allowing commercial/non-commercial reuse of the resources developed and their modified versions
-  - `config.json` The files helps executing the method under different settings to help replication by altering the behavior of the method with ease i.e., without directly interacting with the code
-  - `requirements.txt` The working environment including the software packages used with their specific versions are preserved in this file and can recreate the experimental setup with a single command (more details in `How to Use` section)
-  -  `postBuild` file supports competibility with the execution environment to interactively execute and/or modify the method
-  -  `CITATION.cff` file provides information on how this resource can be cited
-
-  
 ## Applicability to DBD Datasets
-The method is applicable to query social media posts in json format e.g., tweets from [tweetsKB](https://data.gesis.org/tweetskb/). However, it requires the following additional steps before applying this method
+The method is applicable to query social media posts in json format e.g., tweets. 
 
-```mermaid
-graph LR
-A[Load TweetsKB RDF] -->B(Read Tweet IDs)
-    B --> C(Hyderate tweet text)
-    C --> D[Load posts in JSON]
-```
-
-## Method Reusability Demonstration
-### 1. How to Use
+## 1. How to Use (For the use case example)
 - **Setting up virtual environment**
     - Create isolated virtual environment to execute the method
     - Using Conda `conda create -n <venv-name> python=3.8` *or*
@@ -69,8 +42,6 @@ You can enter the queries you want to search within the posts, with one query pe
 ### 3. Sample output:
 After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
 
-
-<small>
 ```ruby
 {
 'social media': [
@@ -103,7 +74,24 @@ After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output 
 ...
 }
 ```
-</small>
+## Repo Structure
+The repository is organized as follows:
+- **Folders**:
+  - `data`: Contains the input file `input_queries.txt`. The output file `output.json` is also created here
+  - `embeddings`: Contains the English embeddings file from Fasttext `en_embeddings.p`
+  - `corpora` Contains the collection of social media posts in `JSON` format
+
+- **Code files**:
+  - `lookup_socialmedia_posts.ipynb`: The main code implemented as a Jupyter Notebook. It contains four sections covering document embeddings, tweet lookup, similarity computation, and hash table creation..
+  - `utils.py`: Contains essential functions needed for the method's functionality.
+    
+- **Open science/Reproducibility files**
+  - `LICENSE.txt` Apache 2.0 license allowing commercial/non-commercial reuse of the resources developed and their modified versions
+  - `config.json` The files helps executing the method under different settings to help replication by altering the behavior of the method with ease i.e., without directly interacting with the code
+  - `requirements.txt` The working environment including the software packages used with their specific versions are preserved in this file and can recreate the experimental setup with a single command (more details in `How to Use` section)
+  -  `postBuild` file supports competibility with the execution environment to interactively execute and/or modify the method
+  -  `CITATION.cff` file provides information on how this resource can be cited
+
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via Email: fakhri.momeni@gesis.org.
