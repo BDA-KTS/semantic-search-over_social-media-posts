@@ -7,9 +7,10 @@ The method reads search queries from `data/input_queries.txt` (with one query pe
 Users can customize the behavior of the method by specifying their preferences and paths to resources in the `config.json` file. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. Furthermore, working environment of the method is preserved in `requirements.txt` file, `random seed variables` are defined and the necessary details to reuse the method are provided in this document. *The method takes 1-2mins for 5000 posts on 11th Gen Intel(R) Core(TM) i7-1165G7 @ 2.80GHz (with 16GB RAM) PC (Windows 10 OS).* 
 
 ## Prerequisite
-The pre-requisites for this method are `Python v3.8.*` or ideally Anaconda (to create virtual environments with required python version) installed on the system. Following the `How To Use` section will lead to installing other required packages.
+The prerequisites for running this method are `Python v3.8.*` (or ideally, Anaconda to create a virtual environment with the required Python version). Following the `How To Use` section will lead to installing other required packages.
 
-This method requires social media posts collection in `JSON` format to be placed in the `socialmedia_posts/` folder and its path updated in the `config.json` file. For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/tweets.20150430-223406.json`.
+This method requires a collection of social media posts in `JSON` format. Place this collection in the `socialmedia_posts/` folder and update the file path in the config.json.
+For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/tweets.20150430-223406.json`.
 
 ## Keywords
 *Text similarity, Semantic similarity search, text retrieval* 
