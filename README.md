@@ -1,3 +1,5 @@
+https://mybinder.org/v2/gh/gesiscss/semantic_search_social-media_posts/HEAD
+
 # Semantic search over social media posts (tweets)
 
 ## Description
