@@ -77,7 +77,7 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 }
 ```
 ## Repo Structure
-The repository is organized as follows:
+The repository structure is as follows:
 - **Folders**:
   - `data`: Contains the input file `input_queries.txt`. The output file `output.json` is also created here
   - `embeddings`: Contains the English embeddings file from Fasttext `en_embeddings.p`
