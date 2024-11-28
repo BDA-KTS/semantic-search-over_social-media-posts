@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic_search_social-media_posts/HEAD?labpath=lookup_socialmedia_posts.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic_search/HEAD?labpath=lookup_socialmedia_posts.ipynb)
 
 # Semantic search over social media posts (tweets)
 
