@@ -60,14 +60,15 @@ A[Load TweetsKB RDF] -->B(Read Tweet IDs)
 
 
 ### 2. Sample input (Search queries):
-
+You can enter the queries you want to search within the posts, with one query per line, in the file located at `/data/input_queries.txt`, such as:
 `social media` \
 `women` \
 `election`
 
 
 ### 3. Sample output:
-Here are top-K most similar posts to the given query (top-K = 5 in this case):
+After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be available in JSON format located at `/data/output.json`. Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
+
 <small>
 ```ruby
 {
