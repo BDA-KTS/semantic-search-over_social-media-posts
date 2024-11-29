@@ -21,7 +21,7 @@ For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/t
 - A social scientist interested in finding relevant tweets about `social media`, `women` and `election`
 
 ## Applicability to DBD Datasets
-The method is applicable to query social media posts in json format e.g., tweets. 
+The method is applicable to query social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). 
 
 ## How to Use
 - **Setting up virtual environment**
