@@ -4,6 +4,7 @@
 
 ## Description
 This method performs a semantic search across a collection of social media posts (e.g., tweets) and returns the most similar posts to the provided search query. The method uses a pretrained language model (embeddings) to compute the semantic similarity between the query and posts using cosine similarity, identifying the closest matches. For each query, the method returns the top-K posts, sorted in descending order of similarity.
+
 ![alt semantic search design](semantic-search-design.png)
 
 The method reads search queries from `data/input_queries.txt` (with one query per line) and writes the top-K most similar posts to `data/output.json`. The method loads [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) from `embeddings/en_embeddings.p` file and computes document embeddings by averaging the embeddings of the tokens in each post.
