@@ -44,11 +44,7 @@ The method is applicable to query social media posts in json format e.g., tweets
 
 
 ### Sample input (Search queries):
-You can enter the queries you want to search within the posts, with one query per line, in the file located at `/data/input_queries.txt`, such as:
-`social media` \
-`women` \
-`election`
-
+The easiest way to change the query is by editing the `/data/input_queries.txt`. Currently, it contains the keywords `Social media`, `women`, `election` to find tweets relevant to these topics in the example dataset.
 
 ### Sample output:
 After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Each result in the output is a JSON object that includes the post ID, post text, and the similarity score (ranging from 0 to 1). The higher the similarity score, the more relevant the post is to the query.
