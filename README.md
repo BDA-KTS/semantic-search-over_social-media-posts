@@ -23,7 +23,7 @@ For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/t
 ## Applicability to DBD Datasets
 The method is applicable to query social media posts in json format e.g., tweets. 
 
-## 1. How to Use with Sample Input and Output)
+## How to Use with Sample Input and Output)
 - **Setting up virtual environment**
     - with Anaconda prompt
       -  `conda create -n semantic_search python=3.8`
@@ -43,14 +43,14 @@ The method is applicable to query social media posts in json format e.g., tweets
    - Change the value of `"top-k": 5` for desired number of top similar posts for each query 
 
 
-### 2. Sample input (Search queries):
+### Sample input (Search queries):
 You can enter the queries you want to search within the posts, with one query per line, in the file located at `/data/input_queries.txt`, such as:
 `social media` \
 `women` \
 `election`
 
 
-### 3. Sample output:
+### Sample output:
 After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Each result in the output is a JSON object that includes the post ID, post text, and the similarity score (ranging from 0 to 1). The higher the similarity score, the more relevant the post is to the query.
 Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
 
