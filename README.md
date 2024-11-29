@@ -23,7 +23,7 @@ For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/t
 ## Applicability to DBD Datasets
 The method is applicable to query social media posts in json format e.g., tweets. 
 
-## How to Use with Sample Input and Output)
+## How to Use
 - **Setting up virtual environment**
     - with Anaconda prompt
       -  `conda create -n semantic_search python=3.8`
