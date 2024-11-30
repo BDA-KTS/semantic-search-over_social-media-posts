@@ -19,7 +19,7 @@ For the sake of demo, it operates on the NLTK sample tweets placed in `corpora/t
 ## Keywords
 *Text similarity, Semantic similarity search, text retrieval* 
 
-## Science Usecase(s)
+## Usecase(s)
 - A social scientist interested in finding relevant tweets about `social media`, `women` or `election`.
 
 ## Applicability to DBD Datasets
