@@ -5,7 +5,7 @@
 ## Description
 This method performs a semantic search across a collection of social media posts (e.g., tweets) and returns the most similar posts to the provided search query. The method uses a pretrained language model (embeddings) to compute the semantic similarity between the query and posts using cosine similarity, identifying the closest matches. For each query, the method returns the top-K posts, sorted in descending order of similarity.
 
-![alt semantic search design](semantic-search-design.png)
+![alt semantic search how to use](semantic-search-how-to-use.png)
 
 The method reads search queries from `data/input_queries.txt` (with one query per line) and writes the top-K most similar posts to `data/output.json`. It uses [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) loaded from `embeddings/en_embeddings.p` to get word/token embeddings that are averaged to compute post/document embeddings.
 Users can customize the behavior of the method by specifying their preferences and paths to resources in the `config.json` file. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. Furthermore, working environment of the method is preserved in `requirements.txt` file, `random seed variables` are defined and the necessary details to reuse the method are provided in `How to Use`, in this document.  
@@ -44,6 +44,7 @@ The method is applicable to query social media posts in json format e.g., [Tweet
    - Toggle `"ifpreprocess": true/false` in `/config.json` to compare results with/without special characters
    - Change the value of `"top-k": 5` for desired number of top similar posts for each query 
 
+![alt semantic search design](semantic-search-design.png)
 
 ### Sample input (Search queries):
 The easiest way to change the query is by editing the `/data/input_queries.txt`. Currently, it contains the keywords `Social media`, `women`, `election` to find tweets relevant to these topics in the example dataset.
