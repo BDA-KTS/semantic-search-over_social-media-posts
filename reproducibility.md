@@ -21,7 +21,7 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 "election": [{"post ID": "19237", "post text": "#ELECTION2015  https://t.co/WgCyxkkAkc", "sim score": "0.9999999995861624"}, {"post ID": "14156", "post text": "#NigelFarage #UKIP #Election2015 http://t.co/oyr8o5aJCv", "sim score": "0.99999999834465"}, {"post ID": "3134", "post text": "@MarkDiStef Haha this is hilarious &amp; brilliant. Twitter with politicians is so empty. #onmessage #tories #election http://t.co/TloIFHijCU", "sim score": "0.9999999981778775"}, {"post ID": "1399", "post text": "RT @MPH1982: #edmiliband #miliband #therock #election2015 https://t.co/3VxgBE3t4q", "sim score": "0.9999999962754627"}, {"post ID": "979", "post text": "RT @MPH1982: #edmiliband #miliband #therock #election2015 https://t.co/3VxgBE3t4q", "sim score": "0.9999999962754627"}]}
 ```
 
-### Applicable Dataset
+### Sample Dataset
 - Uses NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 ### Interactive Environment:  
