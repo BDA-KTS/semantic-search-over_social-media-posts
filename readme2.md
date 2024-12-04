@@ -55,6 +55,7 @@ The method supports applications like trend analysis and content categorization 
 4. **View Outputs**
    - Results are saved in `data/output.json`, including post IDs, text, and similarity scores.
 
+![alt semantic search how to use](semantic-search-how-to-use.png#center)
 ---
 
 ## Reproducibility
