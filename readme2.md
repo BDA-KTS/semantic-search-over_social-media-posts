@@ -4,7 +4,7 @@
 
 ## Table of Contents
 - [Description](#description)
-- [How to Use](#how-to-use)
+- [How to Use](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/how_to_use.md)
 - [Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md)
 
 
