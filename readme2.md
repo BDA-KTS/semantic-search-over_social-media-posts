@@ -5,19 +5,18 @@
 ---
 
 ## Description
-This method performs a semantic search across a collection of social media posts (e.g., tweets) and returns the most similar posts to the provided search query. It leverages a pretrained language model to compute semantic similarity between the query and posts using cosine similarity, returning the top-K matches sorted by similarity.
-
-The method reads search queries from `data/input_queries.txt` (one query per line) and writes the results to `data/output.json`. It uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) for word/token embeddings, which are averaged to compute post/document embeddings.
-
-Social scientists can use this tool to find semantically similar posts for queries related to topics like social media, women, or elections. The method allows customization via a `config.json` file to adjust parameters such as the input dataset, the number of results (`top-K`), and preprocessing options (e.g., cleaning).
-
+This method allows users to perform a semantic search across a collection of social media posts (e.g., tweets) and retrieve the most relevant posts for a given query. For example, a social scientist studying public discourse on topics like *social media*, *gender issues*, or *elections* can use this tool to identify posts that share a similar meaning to the input query.
+### Usecase(s)
+The method supports applications like trend analysis and content categorization in user-generated content. It is particularly useful for understanding how a specific topic is discussed across various contexts in social media.
+### Keywords
+*Text similarity, Semantic similarity search, text retrieval* 
 ---
 
 ## How to Use
 
 ### Prerequisites
 - **Python v3.8** (preferably through Anaconda)
-- A collection of social media posts in JSON format placed in the `socialmedia_posts/` folder. (For demonstration, NLTK sample tweets are included in `corpora/tweets.20150430-223406.json`.)
+- This method requires a collection of social media posts in `JSON` format. Place the collection in the `corpora/` folder and update the file name in the `config.json` to point to your dataset (e.g., `tweets.20150430-223406.json`). For demonstration purposes, the method uses a sample dataset of NLTK tweets located in `corpora/tweets.20150430-223406.json`.
 
 ### Steps to Execute
 1. **Set up a Virtual Environment**
@@ -67,7 +66,7 @@ Social scientists can use this tool to find semantically similar posts for queri
 - **Input queries:** Located in `data/input_queries.txt`.
 - **Output format:** Saved as `data/output.json`, showing top-K similar posts with their similarity scores.
 
-### Demo Dataset
+### Applicable Dataset
 - Uses NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 ### Hardware Details
