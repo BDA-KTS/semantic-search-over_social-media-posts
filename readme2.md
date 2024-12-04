@@ -19,7 +19,7 @@ The method supports applications like trend analysis and content categorization 
 ---
 
 ## How to Use
-
+![alt semantic search how to use](semantic-search-how-to-use.png#center)
 ### Prerequisites
 - **Python v3.8** (preferably through Anaconda)
 - This method requires a collection of social media posts in `JSON` format. Place the collection in the `corpora/` folder and update the file name in the `config.json` to point to your dataset (e.g., `tweets.20150430-223406.json`). For demonstration purposes, the method uses a sample dataset of NLTK tweets located in `corpora/tweets.20150430-223406.json`.
@@ -54,8 +54,6 @@ The method supports applications like trend analysis and content categorization 
 
 4. **View Outputs**
    - Results are saved in `data/output.json`, including post IDs, text, and similarity scores.
-
-![alt semantic search how to use](semantic-search-how-to-use.png#center)
 ---
 
 ## Reproducibility
