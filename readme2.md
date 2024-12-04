@@ -79,6 +79,8 @@ The method supports applications like trend analysis and content categorization 
 
    [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic-search-over_social-media-posts/HEAD?labpath=semantic-search-over_social-media-posts.ipynb)
 
+   ![alt semantic search design](semantic-search-design.png)
+
 ### Hardware Details
 - Average runtime: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 processor with 16GB RAM (Windows 10).
 
