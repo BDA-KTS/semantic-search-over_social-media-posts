@@ -76,4 +76,4 @@ The method supports applications like trend analysis and content categorization 
 ---
 
 ## Contact Details
-For questions or feedback, contact xx at **x.xx@x.x**.
+For questions or feedback, contact Fakhri Momeni via Email: fakhri.momeni@gesis.org.
