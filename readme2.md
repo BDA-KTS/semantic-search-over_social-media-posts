@@ -9,7 +9,7 @@ This method allows users to perform a semantic search across a collection of soc
 ### Usecase(s)
 The method supports applications like trend analysis and content categorization in user-generated content. It is particularly useful for understanding how a specific topic is discussed across various contexts in social media.
 ### Keywords
-*Text similarity, Semantic similarity search, text retrieval* 
+Text similarity, Semantic similarity search, text retrieval
 ---
 
 ## How to Use
