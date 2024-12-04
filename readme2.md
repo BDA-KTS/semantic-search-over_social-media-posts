@@ -14,6 +14,9 @@ The method supports applications like trend analysis and content categorization 
 ### Keywords
 *Text similarity, Semantic similarity search, text retrieval*
 
+## Applicability to DBD Datasets
+The method is applicable to query social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). 
+
 ---
 
 
