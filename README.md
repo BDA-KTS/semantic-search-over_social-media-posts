@@ -7,7 +7,7 @@
 This method allows users to perform a semantic search across a collection of social media posts (e.g., tweets) and retrieve the most relevant posts for a given query. For example, a social scientist studying public discourse on topics like *social media*, *gender issues*, or *elections* can use this tool to identify posts that share a similar meaning to the input query.
 
 - **[How to Use](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
-- **[Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md):** Guidance on replicating the results, adjusting settings, and ensuring consistency across runs.
+- **[Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md):** Information on ensuring consistent results, adjusting settings, and maintaining compatibility across environments.
 
 ### Usecase(s)
 The method supports applications like trend analysis and content categorization in user-generated content. It is particularly useful for understanding how a specific topic is discussed across various contexts in social media.
