@@ -16,9 +16,6 @@ This method supports all use cases that require finding tweets (or other social 
 ### Keywords
 *Text similarity, Semantic similarity search, text retrieval*
 
-## Applicability to DBD Datasets
-The method is applicable to query social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). 
-
 ---
 
 
