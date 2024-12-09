@@ -34,12 +34,27 @@
   
 ### Input and Output Specification (With sample)
 #### **Input**
-- **User Query:** The easiest way to change the query is by editing the `/data/input_queries.txt`. Currently, it contains the keywords `Social media`, `women`, `election` to find tweets relevant to these topics in the example dataset.
+- **User Query:** The easiest way to change the query is by editing the `/data/input_queries.txt`.
+  - **Example Query:** The current file contains the following keywords:  
+    - `Social media`  
+    - `Women`  
+    - `Election`  
+  These keywords will be used to find tweets relevant to these topics in the dataset.
 
 - **Input Dataset:** It is a collection of social media posts in `JSON` format. We use NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 #### **Output**
-- **Output:** After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Each result in the output is a JSON object that includes the post ID, post text, and the similarity score (ranging from 0 to 1). The higher the similarity score, the more relevant the post is to the query.
+- **Output Format:**  
+  After running all the scripts in `lookup_socialmedia_posts.ipynb`, the results will be saved as a JSON file in the following location:  
+  - **File:** `/data/output.json`  
+
+- **Structure of Output:**  
+  Each result in the JSON output file includes the following fields:  
+  - `Post ID`: The unique identifier of the social media post.  
+  - `Post Text`: The content of the post.  
+  - `Similarity Score`: A numerical value (ranging from 0 to 1) indicating how closely the post matches the input query.  
+
+- **Sample Output:**  
 Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
 
 ```json
