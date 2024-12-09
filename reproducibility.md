@@ -27,7 +27,7 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 - Uses NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 ### Interactive Environment:  
--To make it easier to reproduce the results, you can run this method in an interactive pre-configured environment using Binder. Click the badge below to get started:  
+-To easily run and explore the method in a pre-configured environment, you can use Binder. It allows you to execute the notebook without needing to set up the environment locally. Click the badge below to get started: 
 
    [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic-search-over_social-media-posts/HEAD?labpath=semantic-search-over_social-media-posts.ipynb)
 
