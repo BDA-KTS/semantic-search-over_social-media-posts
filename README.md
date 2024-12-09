@@ -12,8 +12,7 @@ The method reads search queries from `data/input_queries.txt` (with one query pe
 - **[Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md):** Information about the actual implementation and reproduction of the method.
 
 ### Usecase(s)
-The method supports applications like trend analysis and content categorization in user-generated content. It is particularly useful for understanding how a specific topic is discussed across various contexts in social media.
-
+This method supports all use cases that require finding tweets (or other social media posts) for a specific topic, entity, or keyword. That usually applies to any research looking into trends or time series of tweets, e.g. for opinion mining.
 
 ### Keywords
 *Text similarity, Semantic similarity search, text retrieval*
