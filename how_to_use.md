@@ -45,7 +45,7 @@
 
 #### **Output:**
 - **Output Format:**  
-  After running all the scripts in `lookup_socialmedia_posts.ipynb`, the results will be saved as a JSON file in the following location:  
+  After running all the scripts in `semantic-search-over_social-media-posts.ipynb`, the results will be saved as a JSON file in the following location:  
   - **File:** `/data/output.json`  
 
 - **Structure of Output:**  
