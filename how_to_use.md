@@ -1,4 +1,5 @@
 ## How to Use
+
 ![alt semantic search how to use](semantic-search-how-to-use.png#center)
 ### Prerequisites
 - **Python v3.8** (preferably through Anaconda)
