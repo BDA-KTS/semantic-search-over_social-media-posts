@@ -14,7 +14,7 @@ This method allows users to perform a semantic search across a collection of soc
 This method supports all use cases that require finding tweets (or other social media posts) for a specific topic, entity, or keyword. That usually applies to any research looking into trends or time series of tweets, e.g. for opinion mining.
 
 ### Keywords
-*Text similarity, Semantic similarity search, text retrieval*
+*text similarity, semantic similarity search, cosine similarity, text retrieval*
 
 ---
 
