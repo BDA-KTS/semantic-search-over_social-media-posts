@@ -9,10 +9,11 @@ This method allows users to perform a semantic search across a collection of soc
 The method reads search queries from `data/input_queries.txt` (with one query per line) and writes the top-K most similar posts to `data/output.json`. It uses [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) loaded from `embeddings/en_embeddings.p` to get word/token embeddings that are averaged to compute post/document embeddings.
 
 - **[How to Use](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/how_to_use.md):** Detailed instructions for setting up the environment, configuring the method, and running the script.
-- **[Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md):** Information on ensuring consistent results, adjusting settings, and maintaining compatibility across environments.
+- **[Reproducibility](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/reproducibility.md):** Information about the actual implementation and reproduction of the method.
 
 ### Usecase(s)
 The method supports applications like trend analysis and content categorization in user-generated content. It is particularly useful for understanding how a specific topic is discussed across various contexts in social media.
+
 
 ### Keywords
 *Text similarity, Semantic similarity search, text retrieval*
