@@ -35,7 +35,7 @@
 ### Sample Inputs and Outputs
 - **User Query:** The easiest way to change the query is by editing the `/data/input_queries.txt`. Currently, it contains the keywords `Social media`, `women`, `election` to find tweets relevant to these topics in the example dataset.
 
-- **Input Dataset:** 
+- **Input Dataset:** Uses NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 - **Output format:** After executing all the scripts in `lookup_socialmedia_posts.ipynb`, the output will be written in JSON format located at `/data/output.json`. Each result in the output is a JSON object that includes the post ID, post text, and the similarity score (ranging from 0 to 1). The higher the similarity score, the more relevant the post is to the query.
 Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
@@ -46,7 +46,5 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 "election": [{"post ID": "19237", "post text": "#ELECTION2015  https://t.co/WgCyxkkAkc", "sim score": "0.9999999995861624"}, {"post ID": "14156", "post text": "#NigelFarage #UKIP #Election2015 http://t.co/oyr8o5aJCv", "sim score": "0.99999999834465"}, {"post ID": "3134", "post text": "@MarkDiStef Haha this is hilarious &amp; brilliant. Twitter with politicians is so empty. #onmessage #tories #election http://t.co/TloIFHijCU", "sim score": "0.9999999981778775"}, {"post ID": "1399", "post text": "RT @MPH1982: #edmiliband #miliband #therock #election2015 https://t.co/3VxgBE3t4q", "sim score": "0.9999999962754627"}, {"post ID": "979", "post text": "RT @MPH1982: #edmiliband #miliband #therock #election2015 https://t.co/3VxgBE3t4q", "sim score": "0.9999999962754627"}]}
 ```
 
-### Sample Dataset
-- Uses NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
 ---
