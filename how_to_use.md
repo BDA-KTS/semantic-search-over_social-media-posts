@@ -43,7 +43,7 @@
 
 - **Input Dataset:** It is a collection of social media posts in `JSON` format. We use NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
 
-#### **Output**
+#### **Output:**
 - **Output Format:**  
   After running all the scripts in `lookup_socialmedia_posts.ipynb`, the results will be saved as a JSON file in the following location:  
   - **File:** `/data/output.json`  
