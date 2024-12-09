@@ -8,22 +8,22 @@
 1. **Set up a Virtual Environment**
    - Using Anaconda:
      ```bash
-     conda create -n semantic_search python=3.8
-     conda activate semantic_search
-     pip install -r requirements.txt
+     >conda create -n semantic_search python=3.8
+     >conda activate semantic_search
+     >pip install -r requirements.txt
      ```
    - Using Python:
      ```bash
-     python -m venv semantic_search
-     cd semantic_search
-     Scripts\activate
-     cd ..
-     pip install -r requirements.txt
+     >python -m venv semantic_search
+     >cd semantic_search
+     >Scripts\activate
+     >cd ..
+     >pip install -r requirements.txt
      ```
 2. **Run Jupyter Notebook**
    - Start Jupyter Lab or Notebook:
      ```bash
-     jupyter lab
+     >jupyter lab
      ```
    - Open and execute all cells in `lookup_socialmedia_posts.ipynb`.
 3. **Update Inputs**
