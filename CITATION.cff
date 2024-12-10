@@ -4,7 +4,7 @@ authors:
   - family-names: Momeni
     given-names: Fakhri
     orcid: https://orcid.org/0000-0002-5572-575X
-title: "Lookup social media posts"
+title: "semantic search over social media posts"
 version: 1.0
 identifiers:
   - type: 
