@@ -43,10 +43,7 @@ def clean_posts(posts):
     Output:
         tweets_clean: a list of words containing the processed tweet
 
-    '''
-        
-    tokenizer = TweetTokenizer(preserve_case=False, strip_handles=True,
-                               reduce_len=True)
+    ''' 
     clean_posts = []
     for post in posts:
         # remove stock market tickers like $GE
