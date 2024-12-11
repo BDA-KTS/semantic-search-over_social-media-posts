@@ -46,6 +46,7 @@ def clean_posts(posts):
     ''' 
     clean_posts = []
     for post in posts:
+        post = post.lower()
         # remove stock market tickers like $GE
         post = re.sub(r'\$\w*', '', post)
         # remove old style retweet text "RT"
