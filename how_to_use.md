@@ -10,6 +10,7 @@
      ```bash
      >conda create -n semantic_search python=3.8
      >conda activate semantic_search
+     >conda install -c conda-forge notebook
      >pip install -r requirements.txt
      ```
    - Using Python:
