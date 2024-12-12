@@ -13,7 +13,7 @@ This method allows users to perform a semantic search across a collection of soc
 ### Usecase(s)
 This method supports all use cases that require finding tweets (or other social media posts) for a specific topic, entity, or keyword.
 
-for example, one use case explores how users express emotions and build social connections on Twitter. By analyzing tweets for emotional sentiment, interaction patterns, and cultural references, researchers can uncover insights into individual well-being, community dynamics, and cultural identity trends.
+For example, one use case explores how users express emotions and build social connections on Twitter. By analyzing tweets for emotional sentiment, interaction patterns, and cultural references, researchers can uncover insights into individual well-being, community dynamics, and cultural identity trends.
 
 ### Keywords
 *text similarity, semantic similarity search, cosine similarity, text retrieval*
