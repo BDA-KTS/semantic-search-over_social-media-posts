@@ -6,6 +6,7 @@ ply==3.11
 regex==2024.11.6
 tqdm==4.67.1
 webencodings==0.5.1
+PyQt5==5.15.10
 jupyter==1.1.1
 jupyter-console==6.6.3
 jupyter-events==0.10.0
