@@ -2,6 +2,7 @@ from pathlib import Path
 import nltk
 import re
 import string
+nltk.download("twitter_samples")
 from nltk.corpus import stopwords, twitter_samples
 from nltk.stem import PorterStemmer
 from nltk.corpus import stopwords
