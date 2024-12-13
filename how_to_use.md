@@ -37,9 +37,11 @@
 #### **Input**
 - **User Query:** The easiest way to change the query is by editing the `/data/input_queries.txt`.
   - **Example Query:** The current file contains the following keywords:  
-    - `Social media`  
-    - `Women`  
-    - `Election`  
+    - `Social Norms`  
+    - `Cultural Identity`  
+    - `Community Interaction`
+
+ 
   These keywords will be used to find tweets relevant to these topics in the dataset.
 
 - **Input Dataset:** It can be social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets (`corpora/tweets.20150430-223406.json`) for demonstration.
