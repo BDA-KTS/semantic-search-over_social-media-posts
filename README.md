@@ -2,7 +2,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic-search-over_social-media-posts/HEAD?labpath=semantic-search-over_social-media-posts.ipynb)
 
----
+
 ## Description
 This method allows users to perform a semantic search across a collection of social media posts (e.g., tweets) and retrieve the most relevant posts for a given query. For example, a social scientist studying public discourse on topics like *social media*, *gender issues*, or *elections* can use this tool to identify posts that share a similar meaning to the input query.
 
@@ -18,7 +18,6 @@ For example, one use case explores how users express emotions and build social c
 ### Keywords
 *text similarity, semantic similarity search, cosine similarity, text retrieval*
 
----
 
 ## How to Use
 
@@ -128,7 +127,7 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
   }
 ```
 
----
+
 ## Reproducibility
 The method reads search queries from `data/input_queries.txt` (with one query per line) and writes the top-K most similar posts to `data/output.json`. It uses [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) loaded from `embeddings/en_embeddings.p` to get word/token embeddings that are averaged to compute post/document embeddings.
 
@@ -153,7 +152,7 @@ To easily run and explore the method in a pre-configured environment, you can us
 ### Hardware Details
 Average runtime: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 processor with 16GB RAM (Windows 10).
 
----
+
 
 
 ## Contact Details
