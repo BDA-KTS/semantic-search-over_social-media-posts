@@ -23,4 +23,4 @@ For example, one use case explores how users express emotions and build social c
 
 
 ## Contact Details
-For questions or feedback, contact Fakhri Momeni via Email: fakhri.momeni@gesis.org.
+For questions or feedback, contact Fakhri Momeni via [fakhri.momeni@gesis.org](mailto:fakhri.momeni@gesis.org).
