@@ -1,6 +1,9 @@
 ## How to Use
 
 ![alt semantic search how to use](semantic-search-how-to-use.png#center)
+
+
+
 ### Prerequisites
 - **Python v3.8** (preferably through Anaconda)
 - This method requires a collection of social media posts in `JSON` format. Place the collection in the [corpora/](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/tree/main/corpora) folder and update the file name in the [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) to point to your dataset. For demonstration purposes, the method uses a sample dataset of NLTK tweets located in [corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json).
