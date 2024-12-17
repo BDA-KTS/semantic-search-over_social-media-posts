@@ -10,3 +10,6 @@ PyQt5==5.15.10
 jupyter==1.1.1
 jupyter-console==6.6.3
 jupyter-events==0.10.0
+notebook
+jupyterlab
+nbconvert
