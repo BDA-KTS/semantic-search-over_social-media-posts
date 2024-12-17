@@ -3,7 +3,7 @@
 ![alt semantic search how to use](semantic-search-how-to-use.png#center)
 ### Prerequisites
 - **Python v3.8** (preferably through Anaconda)
-- This method requires a collection of social media posts in `JSON` format. Place the collection in the `corpora/` folder and update the file name in the `config.json` to point to your dataset (e.g., `tweets.20150430-223406.json`). For demonstration purposes, the method uses a sample dataset of NLTK tweets located in `corpora/tweets.20150430-223406.json`.
+- This method requires a collection of social media posts in `JSON` format. Place the collection in the `corpora/` folder and update the file name in the [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main) to point to your dataset (e.g., `tweets.20150430-223406.json`). For demonstration purposes, the method uses a sample dataset of NLTK tweets located in [corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json).
 ### Steps to Execute
 1. **Set up a Virtual Environment**
    - Using Anaconda:
@@ -26,16 +26,16 @@
      ```bash
      >jupyter lab
      ```
-   - Open and execute all cells in `lookup_socialmedia_posts.ipynb`.
+   - Open and execute all cells in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
 3. **Update Inputs**
-   - Add new queries (one per line) in `data/input_queries.txt`.
+   - Add new queries (one per line) in [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
    - Update the path to your JSON collection in [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json).
 4. **View Outputs**
-   - Results are saved in `data/output.json`, including post IDs, text, and similarity scores.
+   - Results are saved in [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json), including post IDs, text, and similarity scores.
   
 ### Input and Output Specification (With sample)
 #### **Input**
-- **User Query:** The easiest way to change the query is by editing the `/data/input_queries.txt`.
+- **User Query:** The easiest way to change the query is by editing the [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
   - **Example Query:** The current file contains the following keywords:  
     - `Social Norms`  
     - `Cultural Identity`  
@@ -48,8 +48,8 @@
 
 #### **Output:**
 - **Output Format:**  
-  After running all the scripts in `semantic-search-over_social-media-posts.ipynb`, the results will be saved as a JSON file in the following location:  
-  - **File:** `/data/output.json`  
+  After running all the scripts in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb), the results will be saved as a JSON file in the following location:  
+  - **File:** [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json) 
 
 - **Structure of Output:**  
   Each result in the JSON output file includes the following fields:  
