@@ -29,7 +29,7 @@
    - Open and execute all cells in `lookup_socialmedia_posts.ipynb`.
 3. **Update Inputs**
    - Add new queries (one per line) in `data/input_queries.txt`.
-   - Update the path to your JSON collection in `[config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json)`.
+   - Update the path to your JSON collection in [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json).
 4. **View Outputs**
    - Results are saved in `data/output.json`, including post IDs, text, and similarity scores.
   
