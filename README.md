@@ -118,17 +118,14 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 ```
 ## How to Use
 ![alt semantic search how to use](semantic-search-how-to-use.png#center)
-1. **Run Jupyter Notebook**
-   - Start Jupyter Lab or Notebook:
-     ```bash
-     >jupyter lab
-     ```
-   - Open and execute all cells in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
-2. **Update Inputs**
-   - Add new queries (one per line) in [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
-   - Update the path to your JSON collection in [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json).
-3. **View Outputs**
-   - Results are saved in [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json), including post IDs, text, and similarity scores.
+- Start Jupyter Lab or Notebook:
+```bash
+>jupyter lab
+```
+- Open and execute all cells in [semantic-search-over_social-media-posts.ipynb](semantic-search-over_social-media-posts.ipynb).
+- Add new queries (one per line) in [data/input_queries.txt](/data/input_queries.txt).
+- Update the path to your JSON collection in [config.json](/config.json).
+- Results are saved in [data/output.json](/data/output.json), including post IDs, text, and similarity scores.
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via [fakhri.momeni@gesis.org](mailto:fakhri.momeni@gesis.org).
