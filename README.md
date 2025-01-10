@@ -45,7 +45,7 @@ Average runtime: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 process
 
 
 ## Input Data
-- The input (query) text can be a word, phrase or sentence or a social media post, for semantic search over the corpora. For multiple queries update [/data/input_queries.txt](/data/input_queries.txt) having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
+- The input (query) text can be a word, phrase or sentence or a social media post, for semantic search over the corpora. For multiple queries update [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
 
 ## Sample Input and Output Data
 - **User Query:** The easiest way to change the query is by editing the [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
