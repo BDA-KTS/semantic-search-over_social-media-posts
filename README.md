@@ -116,7 +116,6 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
   }
 ```
 ## How to Use
-![Semantic search - how to use](semantic-search-how-to-use.png)
 - Start Jupyter Lab or Notebook:
 ```bash
 >jupyter lab
