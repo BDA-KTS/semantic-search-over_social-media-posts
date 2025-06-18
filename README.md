@@ -14,7 +14,7 @@ This method supports all use cases that require finding tweets (or other social 
 ## Input Data
 - The input (query) text can be a word, phrase or sentence or a social media post, for semantic search over the corpora. For multiple queries update [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
 
-## Sample Input and Output Data
+
 - **User Query:** The easiest way to change the query is by editing the [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
   - **Example Query:** The current file contains the following keywords:  
     - `Social Norms`  
@@ -25,7 +25,7 @@ This method supports all use cases that require finding tweets (or other social 
 
 - **Input Dataset:** It can be social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets ([corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json)) for demonstration.
 
-- **Output Format:**  
+## Output Data 
   After running all the scripts in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb), the results will be saved as a JSON file in the following location:  
   - **File:** [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json) 
 
