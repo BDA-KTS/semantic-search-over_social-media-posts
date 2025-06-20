@@ -3,39 +3,34 @@
 ## Description
 This method allows users to perform a semantic search across a collection of social media posts (e.g., tweets) and retrieve the most relevant posts for a given query. For example, a social scientist studying public discourse on topics like *social media*, *gender issues*, or *elections* can use this tool to identify posts that share a similar meaning to the input query.
 
-**Reproducibility:** The method reads search queries from [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) (with one query per line) and writes the top-K most similar posts to [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json). It uses [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) loaded from [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p) to get word/token embeddings that are averaged to compute post/document embeddings. Users can customize the behavior of the method by specifying their preferences and paths to resources in the [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) file. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. For reproducibility of results across executions, the working environment of the method is preserved in [requirements.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/requirements.txt) file, `random seed variables` are defined and the necessary details to reuse the method are provided in [How to Use](#How-to-Use) section. Update [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) to adjust parameters like `input_query_filepath`, `top-K`, or preprocessing options (`"ifpreprocess": true/false`). To easily run and explore the method in a pre-configured environment, you can use [Binder](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic-search-over_social-media-posts/HEAD?labpath=semantic-search-over_social-media-posts.ipynb). It allows you to execute the notebook without needing to set up the environment locally. Click the badge below to get started. The following figure explains the working of the method that computes embeddings for words in the corpora posts and the input query, aggregate them at the document level, compute cosine similarity for between each query embedding and corpora posts embeddings and finally restults tne top-K most similar posts from the corpora. 
-
-![semantic search workflow](semantic-search-design.png)
-
 ## Use Case(s)
 This method supports all use cases that require finding tweets (or other social media posts) for a specific topic, entity, or keyword. For example, one use case explores how users express emotions and build social connections on Twitter. By analyzing tweets for emotional sentiment, interaction patterns, and cultural references, researchers can uncover insights into individual well-being, community dynamics, and cultural identity trends.
-
 
 ## Input Data
 - The input (query) text can be a word, phrase or sentence or a social media post, for semantic search over the corpora. For multiple queries update [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
 
+**User Query:** The easiest way to change the query is by editing the [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
 
-- **User Query:** The easiest way to change the query is by editing the [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt).
-  - **Example Query:** The current file contains the following keywords:  
-    - `Social Norms`  
-    - `Cultural Identity`  
-    - `Community Interaction`
+**Example Query:** The current file contains the following keywords:  
+  - `Social Norms`  
+  - `Cultural Identity`
+  - `Community Interaction`
  
   These keywords will be used to find tweets relevant to these topics in the dataset.
 
-- **Input Dataset:** It can be social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets ([corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json)) for demonstration.
+**Input Dataset:** It can be social media posts in json format e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets ([corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json)) for demonstration.
 
 ## Output Data 
   After running all the scripts in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb), the results will be saved as a JSON file in the following location:  
-  - **File:** [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json) 
+  **File:** [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json) 
 
-- **Structure of Output:**  
+**Structure of Output:**  
   Each result in the JSON output file includes the following fields:  
   - `Post ID`: The unique identifier of the social media post.  
   - `Post Text`: The content of the post.  
   - `Similarity Score`: A numerical value (ranging from 0 to 1) indicating how closely the post matches the input query.  
 
-- **Sample Output:**  
+**Sample Output:**  
 Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
 
 ```json
@@ -84,14 +79,8 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
   }
 ```
 
-
-## Repo Structure
-- The folder [corpora](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora) has the dataset of sample posts to use for semantic search against a user query.
-- The folder [data](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data) contain [input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) having user queries. The output file [output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json) is also generated here.
-- The folder [embeddings](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings) contain the Fasttext embeddings file for English [en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
-- The notebook [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb) is the main working notebook to execute the method.
-- The utility functions used are defined in [utils.py](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/utils.py)
-- The file [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) helps users directly alter the behavior of the method without interacting with the code. 
+## Hardware Requirements
+The method runs on a cheap virtual machine provided by cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
 ## Environment Setup
 - **Python v3.8** (preferably through Anaconda)
@@ -111,9 +100,6 @@ Below are the top-K most similar posts to the given query (with top-K set to 5 i
 >cd ..
 >pip install -r requirements.txt
 ```
-## Hardware Requirements
-Average runtime: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 processor with 16GB RAM (Windows 10).
-
 
 ## How to Use
 - Start Jupyter Lab or Notebook:
@@ -124,6 +110,11 @@ Average runtime: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 process
 - Add new queries (one per line) in [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main//data/input_queries.txt).
 - Update the path to your JSON collection in [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main//config.json).
 - Results are saved in [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main//data/output.json), including post IDs, text, and similarity scores.
+
+## Technical Details
+The method reads search queries from [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt) (with one query per line) and writes the top-K most similar posts to [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json). It uses [Fasttext embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) loaded from [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p) to get word/token embeddings that are averaged to compute post/document embeddings. Users can customize the behavior of the method by specifying their preferences and paths to resources in the [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) file. It assists in replicability by allowing to execute the method under different settings e.g., with different posts collection, different value of top-K and with/without cleaning. For reproducibility of results across executions, the working environment of the method is preserved in [requirements.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/requirements.txt) file, `random seed variables` are defined and the necessary details to reuse the method are provided in [How to Use](#How-to-Use) section. Update [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json) to adjust parameters like `input_query_filepath`, `top-K`, or preprocessing options (`"ifpreprocess": true/false`). To easily run and explore the method in a pre-configured environment, you can use [Binder](https://notebooks.gesis.org/binder/v2/gh/BDA-KTS/semantic-search-over_social-media-posts/HEAD?labpath=semantic-search-over_social-media-posts.ipynb). It allows you to execute the notebook without needing to set up the environment locally. Click the badge below to get started. The following figure explains the working of the method that computes embeddings for words in the corpora posts and the input query, aggregate them at the document level, compute cosine similarity for between each query embedding and corpora posts embeddings and finally restults tne top-K most similar posts from the corpora. 
+
+![semantic search workflow](semantic-search-design.png)
 
 ## Contact Details
 For questions or feedback, contact Fakhri Momeni via [fakhri.momeni@gesis.org](mailto:fakhri.momeni@gesis.org).
