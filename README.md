@@ -9,9 +9,9 @@ Searching a discourse for topics of interest like *social media*, *gender issues
 ## Input Data
 The input (query) text can be a word, phrase, or sentence. It can also be a social media post for semantic search over the corpus. For multiple queries, update [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt), having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb). The input file contains the following query terms.
 
-- `Social Norms`  
-- `Cultural Identity`
-- `Community Interaction`
+- `social media`  
+- `women`
+- `election`
  
 The data dump for semantic search can be social media posts in JSON format, e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets ([corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json)) for demonstration.
 
@@ -22,7 +22,7 @@ After running all the scripts in [semantic-search-over_social-media-posts.ipynb]
 - `Post Text`: The content of the post.  
 - `Similarity Score`: A numerical value (ranging from 0 to 1) indicating how closely the post matches the input query.  
 
-Below are the top-K most similar posts to the given query (with top-K set to 5 in this example):
+Below are the top-K (with K=5) most similar posts to the input query (social media, women, and election). Only a few posts similar to a query are shown as examples:
 
 ```json
   {
