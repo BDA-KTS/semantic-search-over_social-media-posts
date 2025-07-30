@@ -49,7 +49,7 @@ Below are the K=3 most similar posts to the input query (social media, women, an
 ```
 
 ## Hardware Requirements
-The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
+The average runtime for this method on a large set of input topics: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 processor with 16GB RAM (Windows 10).
 
 ## Environment Setup
 
@@ -88,7 +88,7 @@ This method performs semantic search by computing embeddings for both queries an
 
 #### Input and Output
 - **Input Queries**: The method reads search queries from the file [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt), with one query per line.
-- **Output Results**: The top-K most similar posts for each query are written to the file [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json). Posts are ranked in decreasing order of similarity scores.
+- **Output Results**: The K most similar posts for each query are written to the file [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json). Posts are ranked in decreasing order of similarity scores.
 
 #### Embedding Computation
 - **Word Embeddings**: The method uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) stored in [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
@@ -96,10 +96,10 @@ This method performs semantic search by computing embeddings for both queries an
 
 #### Similarity Computation
 - **Cosine Similarity**: The similarity between the query embeddings and the pre-computed embeddings of the corpus posts is calculated using cosine similarity.
-- **Ranking**: Posts are ranked in descending order of similarity scores, and only the top-K results are included in the output.
+- **Ranking**: Posts are ranked in descending order of similarity scores, and only the `K` results are included in the output.
 
 #### Configuration
-- **Settings**: The method loads configuration settings from [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json). This file allows users to modify parameters such as the value of K or other runtime settings.
+- **Settings**: The method loads configuration settings from [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json). This file allows users to modify parameters such as the value of`K` or other runtime settings.
 
 #### Workflow
 1. Pre-compute embeddings for all posts in the corpus.
@@ -107,7 +107,7 @@ This method performs semantic search by computing embeddings for both queries an
    - Load the input queries.
    - Compute embeddings for each query.
    - Calculate cosine similarity between query embeddings and corpus embeddings.
-   - Rank posts by similarity and output the top-K results.
+   - Rank posts by similarity and output the `K` most similar results.
 
 ![semantic search workflow](semantic-search-design.png)
 
