@@ -89,12 +89,12 @@ jupyter lab
 
 This method performs semantic search by computing embeddings for both queries and social media posts, and ranking posts based on their similarity to the queries. Below is a detailed breakdown of the process:
 
-Semantic search:
+**Semantic search:**
 
-- **Word Embeddings:** The method uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) stored in [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
-- **Text-Level Embeddings:** Word embeddings are aggregated at the document or query level to produce a single embedding vector for each text unit (query or post).
-- **Cosine Similarity:** The similarity between the query embeddings and the pre-computed embeddings of the corpus posts is calculated using cosine similarity.
-- **Ranking:** Posts are ranked in descending order of similarity scores, and only the `K` results are included in the output.
+- *Word Embeddings:* The method uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) stored in [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
+- *Text-Level Embeddings:* Word embeddings are aggregated at the document or query level to produce a single embedding vector for each text unit (query or post).
+- *Cosine Similarity:* The similarity between the query embeddings and the pre-computed embeddings of the corpus posts is calculated using cosine similarity.
+- *Ranking:* Posts are ranked in descending order of similarity scores, and only the `K` results are included in the output.
 
 **Workflow**
 
