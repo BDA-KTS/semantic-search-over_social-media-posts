@@ -49,7 +49,7 @@ Below are the K=3 most similar posts to the input query (social media, women, an
 ```
 
 ## Hardware Requirements
-The average runtime for this method on a large set of input topics: 1-2 minutes for 5000 posts on an 11th Gen Intel Core i7 processor with 16GB RAM (Windows 10).
+The method runs on a small virtual machine provided by a cloud computing company (2 x86 CPU core, 4 GB RAM, 40GB HDD).
 
 ## Environment Setup
 
@@ -57,24 +57,27 @@ The average runtime for this method on a large set of input topics: 1-2 minutes 
 - Using Anaconda:
   
 ```bash
->conda create -n semantic_search python=3.8
->conda activate semantic_search
->conda install -c conda-forge notebook
->pip install -r requirements.txt
+conda create -n semantic_search python=3.8
+conda activate semantic_search
+conda install -c conda-forge notebook
+pip install -r requirements.txt
 ```
+
 - Using Python:
+
 ```bash
->python -m venv semantic_search
->cd semantic_search
->Scripts\activate
->cd ..
->pip install -r requirements.txt
+python -m venv semantic_search
+cd semantic_search
+Scripts\activate
+cd ..
+pip install -r requirements.txt
 ```
 
 ## How to Use
-- Start Jupyter Lab or Notebook:
+Start Jupyter Lab or Notebook:
+
 ```bash
->jupyter lab
+jupyter lab
 ```
 
 - Open and execute all cells in [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb).
@@ -86,28 +89,19 @@ The average runtime for this method on a large set of input topics: 1-2 minutes 
 
 This method performs semantic search by computing embeddings for both queries and social media posts, and ranking posts based on their similarity to the queries. Below is a detailed breakdown of the process:
 
-#### Input and Output
-- **Input Queries**: The method reads search queries from the file [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt), with one query per line.
-- **Output Results**: The K most similar posts for each query are written to the file [data/output.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/output.json). Posts are ranked in decreasing order of similarity scores.
+Semantic search:
 
-#### Embedding Computation
-- **Word Embeddings**: The method uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) stored in [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
-- **Text-Level Embeddings**: Word embeddings are aggregated at the document or query level to produce a single embedding vector for each text unit (query or post).
+- **Word Embeddings:** The method uses [FastText embeddings](https://dl.fbaipublicfiles.com/fasttext/vectors-english/wiki-news-300d-1M.vec.zip) stored in [embeddings/en_embeddings.p](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/embeddings/en_embeddings.p).
+- **Text-Level Embeddings:** Word embeddings are aggregated at the document or query level to produce a single embedding vector for each text unit (query or post).
+- **Cosine Similarity:** The similarity between the query embeddings and the pre-computed embeddings of the corpus posts is calculated using cosine similarity.
+- **Ranking:** Posts are ranked in descending order of similarity scores, and only the `K` results are included in the output.
 
-#### Similarity Computation
-- **Cosine Similarity**: The similarity between the query embeddings and the pre-computed embeddings of the corpus posts is calculated using cosine similarity.
-- **Ranking**: Posts are ranked in descending order of similarity scores, and only the `K` results are included in the output.
+**Workflow**
 
-#### Configuration
-- **Settings**: The method loads configuration settings from [config.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/config.json). This file allows users to modify parameters such as the value of`K` or other runtime settings.
-
-#### Workflow
-1. Pre-compute embeddings for all posts in the corpus.
-2. At runtime:
-   - Load the input queries.
-   - Compute embeddings for each query.
-   - Calculate cosine similarity between query embeddings and corpus embeddings.
-   - Rank posts by similarity and output the `K` most similar results.
+1. Load precomputed embeddings for the reference dataset
+2. Load the input queries and generate their embeddings
+3. Calculate cosine similarities for each query with all posts of the social media posts dataset using cosine similarity
+4. Rank posts by similarity and output the `K` most similar results.
 
 ![semantic search workflow](semantic-search-design.png)
 
