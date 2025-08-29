@@ -15,7 +15,7 @@ The method uses sentence embeddings to represent both the query and the posts, a
 ## Input Data
 The input (query) text can be a word, phrase, or sentence. It can also be a social media post for semantic search over the corpus. For multiple queries, update [data/input_queries.txt](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/data/input_queries.txt), having each query per line. A single query can be directly provided in the [semantic-search-over_social-media-posts.ipynb](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/semantic-search-over_social-media-posts.ipynb). The input file contains the following query terms: 
 
-`social media` ,`women`,`election`
+`Social Norms` ,`Community Interaction`,`Cultural Identity`
  
 The data dump for semantic search can be social media posts in JSON format, e.g., [Tweets](https://developer.x.com/en/docs/x-api/data-dictionary/object-model/tweet). We use NLTK sample tweets ([corpora/tweets.20150430-223406.json](https://github.com/BDA-KTS/semantic-search-over_social-media-posts/blob/main/corpora/tweets.20150430-223406.json)) for demonstration.
 
